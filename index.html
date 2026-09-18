@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>VEKRA — Vehikal.Com Premium Vehicle Services</title>
+<meta name="description" content="A modern premium vehicle services showcase for Vehikal.Com — a memorable vehicle-focused domain name.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#07090d;--panel:#10141b;--text:#f4f6f8;--muted:#9da7b5;--line:#242b35;--accent:#b8ff3d;--accent2:#67e8f9}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 70% 0,#17210f 0,transparent 35%),var(--bg);color:var(--text);font-family:Inter,sans-serif;overflow-x:hidden}
+a{text-decoration:none;color:inherit}.wrap{max-width:1240px;margin:auto;padding:0 28px}
+header{position:fixed;z-index:20;top:0;left:0;right:0;background:rgba(7,9,13,.72);backdrop-filter:blur(18px);border-bottom:1px solid rgba(255,255,255,.06)}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between}.brand{font-family:"Space Grotesk";font-size:25px;font-weight:700;letter-spacing:-1px}.brand span{color:var(--accent)}
+.menu{width:46px;height:46px;border:1px solid var(--line);border-radius:14px;background:#0c1016;display:grid;place-content:center;gap:4px;cursor:pointer}.menu i{display:block;width:19px;height:2px;background:white;border-radius:5px}
+.drawer{position:fixed;z-index:19;right:24px;top:86px;width:250px;background:#0d1118;border:1px solid var(--line);border-radius:20px;padding:16px;transform:translateY(-15px);opacity:0;pointer-events:none;transition:.3s;box-shadow:0 25px 80px #0008}.drawer.open{transform:none;opacity:1;pointer-events:auto}.drawer a{display:block;padding:13px 14px;border-radius:12px;color:#c9d0da}.drawer a:hover{background:#171d26;color:white}
+.hero{min-height:790px;display:grid;align-items:center;padding:130px 0 70px;position:relative}.hero-grid{display:grid;grid-template-columns:1.03fr .97fr;gap:50px;align-items:center}.eyebrow{color:var(--accent);font-weight:700;letter-spacing:2px;font-size:12px;text-transform:uppercase}.hero h1{font-family:"Space Grotesk";font-size:clamp(58px,8vw,112px);line-height:.88;letter-spacing:-6px;margin:17px 0 25px}.hero h1 em{font-style:normal;color:var(--accent)}.hero p{max-width:610px;color:var(--muted);font-size:18px;line-height:1.7}.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn{padding:15px 21px;border-radius:13px;font-weight:700;border:1px solid var(--line);display:inline-flex;align-items:center;gap:9px}.primary{background:var(--accent);color:#0a0d08;border-color:var(--accent)}.hero-note{font-size:12px;color:#697482;margin-top:14px}.hero-img{height:550px;border-radius:32px;overflow:hidden;border:1px solid #29303a;position:relative;background:url("https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=85") center/cover;box-shadow:0 35px 100px #0009}.hero-img:after{content:"VEHIKAL.COM";position:absolute;inset:auto 24px 22px;color:white;font-family:"Space Grotesk";font-size:15px;letter-spacing:3px;text-shadow:0 2px 12px #000}
+.ticker{border-block:1px solid var(--line);overflow:hidden;white-space:nowrap}.ticker-track{display:inline-block;padding:17px 0;animation:slide 22s linear infinite;color:#adb6c1;font-size:13px;font-weight:700;letter-spacing:1.5px}.ticker b{color:var(--accent);margin:0 40px}@keyframes slide{to{transform:translateX(-50%)}}
+section{padding:105px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:35px}.section-head h2{font-family:"Space Grotesk";font-size:48px;letter-spacing:-2px;margin:8px 0}.section-head p{color:var(--muted);max-width:470px;line-height:1.6}.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.card{background:linear-gradient(145deg,#121820,#0c1016);border:1px solid var(--line);border-radius:20px;padding:22px;min-height:205px;transition:.35s}.card:hover{transform:translateY(-8px);border-color:#4b5563}.icon{font-size:28px}.card h3{margin:22px 0 9px}.card p{color:var(--muted);font-size:13px;line-height:1.6}
+.showcase{display:grid;grid-template-columns:1.4fr .6fr;gap:15px}.shot{min-height:520px;border-radius:26px;overflow:hidden;border:1px solid var(--line);background-size:cover;background-position:center;position:relative}.shot.small{min-height:252px}.stack{display:grid;gap:15px}.shot:nth-child(1){background-image:url("https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1300&q=85")}.shot:nth-child(2){background-image:url("https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=900&q=85")}.shot:nth-child(3){background-image:url("https://images.unsplash.com/photo-1542362567-b07e54358753?auto=format&fit=crop&w=900&q=85")}.overlay{position:absolute;inset:auto 0 0;padding:25px;background:linear-gradient(transparent,#000c)}.overlay span{color:var(--accent);font-size:11px;letter-spacing:2px}.overlay h3{font-size:26px;margin:7px 0}
+.pricing{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.price{border:1px solid var(--line);background:#0d1218;border-radius:22px;padding:28px}.price.featured{border-color:var(--accent);box-shadow:0 0 0 1px #b8ff3d33}.price h3{font-size:20px}.amount{font-family:"Space Grotesk";font-size:42px;margin:22px 0}.price li{list-style:none;color:#aeb7c2;margin:12px 0;font-size:14px}.price ul{padding:0}.price li:before{content:"✓";color:var(--accent);margin-right:9px}
+.reviews{display:flex;gap:15px;overflow:hidden}.review{min-width:340px;background:#0d1218;border:1px solid var(--line);border-radius:20px;padding:23px}.stars{color:var(--accent);letter-spacing:3px}.review p{color:#c3cad3;line-height:1.65}.review small{color:#75808d}
+.faq{max-width:850px}.faq details{border-bottom:1px solid var(--line);padding:20px 0}.faq summary{cursor:pointer;font-weight:700}.faq p{color:var(--muted);line-height:1.7}
+.sell{padding:75px 0}.sellbox{border:1px solid #435027;background:radial-gradient(circle at 80% 20%,#243416,transparent 45%),#0c110a;border-radius:30px;padding:55px;display:flex;justify-content:space-between;align-items:center;gap:35px}.sellbox h2{font-family:"Space Grotesk";font-size:54px;letter-spacing:-3px;margin:8px 0}.sellbox p{color:#aeb7a2;max-width:600px;line-height:1.7}
+footer{border-top:1px solid var(--line);padding:28px 0;color:#707b89;font-size:12px;display:flex;justify-content:space-between}
+.reveal{opacity:0;transform:translateY(24px);transition:.7s}.reveal.show{opacity:1;transform:none}
+@media(max-width:900px){.hero-grid,.showcase{grid-template-columns:1fr}.cards{grid-template-columns:repeat(2,1fr)}.pricing{grid-template-columns:1fr}.hero-img{height:400px}.sellbox{display:block}.sellbox h2{font-size:40px}.section-head{display:block}}
+@media(max-width:560px){.wrap{padding:0 17px}.cards{grid-template-columns:1fr}.hero h1{letter-spacing:-4px}.hero{min-height:auto}.hero-img{height:330px}.shot{min-height:380px}.reviews{overflow:auto}.review{min-width:290px}section{padding:75px 0}.sellbox{padding:32px}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav"><a class="brand" href="#">VEK<span>RA</span></a><button class="menu" id="menu" aria-label="Menu"><i></i><i></i><i></i></button></div></header>
+<nav class="drawer" id="drawer"><a href="#services">Services</a><a href="#showcase">Showcase</a><a href="#plans">Service Plans</a><a href="#reviews">Reviews</a><a href="#faq">FAQ</a><a href="#sell">Buy Vehikal.Com</a></nav>
+
+<main>
+<section class="hero"><div class="wrap hero-grid"><div class="reveal"><div class="eyebrow">Premium vehicle platform • Global brand potential</div><h1>Drive the<br><em>future.</em></h1><p>A polished concept for a complete vehicle-services brand — servicing, detailing, diagnostics, roadside support, rentals and more. The premium <b>Vehikal.Com</b> domain is available for acquisition.</p><div class="cta"><a class="btn primary" href="#sell">Own Vehikal.Com →</a><a class="btn" href="#services">Explore services</a></div><div class="hero-note">Responsive • Animated • Mobile-ready • Premium UI</div></div><div class="hero-img reveal"></div></div></section>
+
+<div class="ticker"><div class="ticker-track">VEHICLE CARE <b>✦</b> AUTO DETAILING <b>✦</b> DIAGNOSTICS <b>✦</b> ROADSIDE ASSIST <b>✦</b> RENTALS <b>✦</b> EV SERVICES <b>✦</b> VEHIKAL.COM <b>✦</b> VEHICLE CARE <b>✦</b> AUTO DETAILING <b>✦</b> DIAGNOSTICS <b>✦</b> ROADSIDE ASSIST <b>✦</b> RENTALS <b>✦</b> EV SERVICES <b>✦</b></div></div>
+
+<section id="services"><div class="wrap"><div class="section-head reveal"><div><div class="eyebrow">One destination</div><h2>Everything your<br>vehicle needs.</h2></div><p>A full-service architecture designed to make the brand feel like a modern automotive ecosystem rather than a basic garage website.</p></div><div class="cards">
+<div class="card reveal"><div class="icon">⚙️</div><h3>Service & Repair</h3><p>Scheduled maintenance, brakes, tyres, oil service and mechanical repairs.</p></div>
+<div class="card reveal"><div class="icon">✨</div><h3>Detailing</h3><p>Premium exterior detailing, interior care, paint protection and ceramic options.</p></div>
+<div class="card reveal"><div class="icon">⌁</div><h3>Diagnostics</h3><p>Modern vehicle health checks, battery testing and electronic diagnostics.</p></div>
+<div class="card reveal"><div class="icon">⚡</div><h3>EV Care</h3><p>EV inspections, charging support and next-generation mobility services.</p></div>
+<div class="card reveal"><div class="icon">🛞</div><h3>Tyres & Wheels</h3><p>Tyre replacement, wheel balancing, alignment and seasonal checks.</p></div>
+<div class="card reveal"><div class="icon">🚘</div><h3>Car Rental</h3><p>Flexible short-term mobility with curated vehicles and simple booking.</p></div>
+<div class="card reveal"><div class="icon">⛑️</div><h3>Roadside Help</h3><p>24/7-style roadside assistance concept for breakdowns and emergencies.</p></div>
+<div class="card reveal"><div class="icon">🔑</div><h3>Vehicle Sales</h3><p>Premium used vehicles, inspections and digital vehicle buying experiences.</p></div>
+</div></div></section>
+
+<section id="showcase"><div class="wrap"><div class="section-head reveal"><div><div class="eyebrow">Visual system</div><h2>Built to look<br>expensive.</h2></div><p>Large automotive imagery, glassy panels, motion and bold typography create a premium showcase suitable for a global vehicle brand.</p></div><div class="showcase"><div class="shot reveal"><div class="overlay"><span>01 / PERFORMANCE</span><h3>Machines. Maintained.</h3></div></div><div class="stack"><div class="shot small reveal"><div class="overlay"><span>02 / DETAIL</span><h3>Every surface.</h3></div></div><div class="shot small reveal"><div class="overlay"><span>03 / MOTION</span><h3>Ready to move.</h3></div></div></div></div></div></section>
+
+<section id="plans"><div class="wrap"><div class="section-head reveal"><div><div class="eyebrow">Example pricing</div><h2>Simple service<br>plans.</h2></div><p>Illustrative packages for the website concept. Prices can be replaced with the final business pricing before launch.</p></div><div class="pricing">
+<div class="price reveal"><h3>Essential</h3><div class="amount">$49</div><ul><li>Multi-point inspection</li><li>Fluid & tyre check</li><li>Basic diagnostics</li><li>Digital service report</li></ul><a class="btn" href="#sell">Book service</a></div>
+<div class="price featured reveal"><h3>Premium</h3><div class="amount">$149</div><ul><li>Full vehicle health check</li><li>Advanced diagnostics</li><li>Interior & exterior care</li><li>Priority support</li></ul><a class="btn primary" href="#sell">Choose plan</a></div>
+<div class="price reveal"><h3>Ultimate</h3><div class="amount">$299</div><ul><li>Complete detailing</li><li>Comprehensive diagnostics</li><li>Protection treatment</li><li>Concierge-style support</li></ul><a class="btn" href="#sell">Choose plan</a></div>
+</div></div></section>
+
+<section id="reviews"><div class="wrap"><div class="section-head reveal"><div><div class="eyebrow">Customer voice</div><h2>Made for<br>confidence.</h2></div><p>Sample testimonials demonstrating how a finished vehicle-services website can present social proof.</p></div><div class="reviews" id="reviewsTrack">
+<div class="review"><div class="stars">★★★★★</div><p>“The experience feels more like a premium mobility brand than a traditional workshop.”</p><small>— Alex M. · Premium Service</small></div>
+<div class="review"><div class="stars">★★★★★</div><p>“Clean booking flow, great visuals and all the vehicle services in one place.”</p><small>— Jordan K. · Fleet Client</small></div>
+<div class="review"><div class="stars">★★★★★</div><p>“The kind of digital experience modern drivers expect.”</p><small>— Sam R. · EV Owner</small></div>
+</div></div></section>
+
+<section id="faq"><div class="wrap"><div class="section-head reveal"><div><div class="eyebrow">Questions</div><h2>FAQ</h2></div></div><div class="faq reveal">
+<details open><summary>What is Vehikal.Com?</summary><p>Vehikal.Com is a short, memorable .com domain name positioned around the global vehicle and automotive services category.</p></details>
+<details><summary>Can this brand cover multiple vehicle services?</summary><p>Yes. The concept intentionally supports servicing, detailing, diagnostics, rentals, roadside assistance, EV care and vehicle sales under one umbrella.</p></details>
+<details><summary>Is the website design responsive?</summary><p>Yes. The included layout adapts for desktop, tablet and mobile screens, with a mobile-friendly menu.</p></details>
+<details><summary>Can the content and pricing be changed?</summary><p>Yes. All copy, service names, prices, buttons and imagery are easy to customize.</p></details>
+</div></div></section>
+
+<section class="sell" id="sell"><div class="wrap"><div class="sellbox reveal"><div><div class="eyebrow">The brandable asset</div><h2>Vehikal.Com</h2><p>A memorable .com built for vehicle services, automotive technology, mobility, dealerships, rentals, repairs and future-facing transportation brands.</p></div><a class="btn primary" href="mailto:contact@example.com?subject=Vehikal.Com%20Inquiry">Make an inquiry →</a></div></div></section>
+</main>
+<footer><div class="wrap" style="width:100%;display:flex;justify-content:space-between"><span>© 2026 VEKRA — Vehicle Services Concept</span><span>Vehikal.Com · Premium Domain</span></div></footer>
+<script>
+const menu=document.getElementById('menu'),drawer=document.getElementById('drawer');
+menu.onclick=()=>drawer.classList.toggle('open');
+drawer.querySelectorAll('a').forEach(a=>a.onclick=()=>drawer.classList.remove('open'));
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(x=>io.observe(x));
+const track=document.getElementById('reviewsTrack'); let pos=0;
+setInterval(()=>{if(innerWidth>650){pos=(pos+355); if(pos>700)pos=0; track.scrollTo({left:pos,behavior:'smooth'})}},3500);
+</script>
+</body></html>
